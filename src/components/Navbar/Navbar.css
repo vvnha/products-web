@@ -6,6 +6,10 @@
   margin-left: 1.5em;
 }
 
+.nav__list-item a {
+  text-transform: capitalize;
+}
+
 .app .nav__hamburger {
   display: none;
 }

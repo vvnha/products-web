@@ -11,7 +11,8 @@
   --clr-fg: #555;
   --clr-fg-alt: #444;
   --clr-primary: #2978b5;
-  --clr-secondary: #f64749;
+  --clr-danger: #f64749;
+  --clr-secondary: #444;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -21,7 +22,7 @@
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
   --clr-primary: #90a0d9;
-  --clr-secondary: #f64749;
+  --clr-danger: #f64749;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -94,11 +95,12 @@ main {
 }
 
 .btn--outline {
-  color: var(--clr-secondary);
-  border: 2px solid var(--clr-secondary);
+  color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
   position: relative;
   overflow: hidden;
   z-index: 1;
+  text-transform: capitalize;
 }
 
 .btn--outline:hover,
@@ -120,36 +122,6 @@ main {
 
 .btn--outline:hover:before,
 .btn--outline:focus:before {
-  right: 0;
-}
-
-.btn--outline--danger {
-  color: var(--clr-secondary);
-  border: 2px solid var(--clr-secondary);
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.btn--outline--danger:hover,
-.btn--outline--danger:focus {
-  color: var(--clr-bg);
-}
-
-.btn--outline--danger:before {
-  content: '';
-  position: absolute;
-  background-color: var(--clr-secondary);
-  right: 100%;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  transition: right 0.2s ease-in-out;
-}
-
-.btn--outline--danger:hover:before,
-.btn--outline--danger:focus:before {
   right: 0;
 }
 
@@ -181,4 +153,66 @@ main {
   .section {
     margin-top: 4em;
   }
+}
+
+.btn--outline--danger {
+  color: var(--clr-danger);
+  border: 2px solid var(--clr-danger);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.btn--outline--danger:hover,
+.btn--outline--danger:focus {
+  color: var(--clr-bg);
+}
+
+.btn--outline--danger:before {
+  content: '';
+  position: absolute;
+  background-color: var(--clr-danger);
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: right 0.2s ease-in-out;
+}
+
+.btn--outline--danger:hover:before,
+.btn--outline--danger:focus:before {
+  right: 0;
+}
+
+.btn--outline--secondary {
+  color: var(--clr-secondary);
+  border: 2px solid var(--clr-secondary);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.btn--outline--secondary:hover,
+.btn--outline--secondary:focus {
+  color: var(--clr-bg);
+}
+
+.btn--outline--secondary:before {
+  content: '';
+  position: absolute;
+  background-color: var(--clr-secondary);
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: right 0.2s ease-in-out;
+}
+
+.btn--outline--secondary:hover:before,
+.btn--outline--secondary:focus:before {
+  right: 0;
 }
