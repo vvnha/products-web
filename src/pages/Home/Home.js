@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 
-import Products from '../../components/Home/Products/Products'
-import Loader from '../../components/Loader/Loader'
+import Products from 'components/Home/Products/Products'
+import Loader from 'components/Loader/Loader'
+import Pagination from 'components/Home/Pagination/Pagination'
 
-import { getAllProduct } from '../../services/products/product-services'
+import { getAllProduct } from 'services/products/product-services'
 import './Home.css'
 import { PRODUCT_NUMBER_COUNT } from '../../constants'
-import Pagination from '../../components/Home/Pagination/Pagination'
 
 function Home() {
   const [productList, setProductList] = useState([])
