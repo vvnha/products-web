@@ -7,7 +7,7 @@ export const getAllProduct = (params) => API.get('products', params)
 export const getProduct = (productId) => API.getById('products', productId)
 
 export const getProductByCode = (productCode) =>
-  API.getByCode('products', productCode)
+  API.getBySearch('products', { search: productCode })
 
 export const updateProduct = (data) => API.put('products', data)
 

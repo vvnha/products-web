@@ -24,10 +24,10 @@ export const getDataById = (resource, productId) => {
   return axiosClient.get(url)
 }
 
-export const getDataByCode = (resource, code) => {
-  const url = `/${resource}?search=${code}`
+export const getDataBySearch = (resource, params) => {
+  const url = `/${resource}`
 
-  return axiosClient.get(url)
+  return axiosClient.get(url, { params })
 }
 
 export const getData = (resource, params) => {
@@ -42,7 +42,7 @@ const API = {
   post: postData,
   put: putData,
   delete: deleteData,
-  getByCode: getDataByCode,
+  getBySearch: getDataBySearch,
 }
 
 export default API
