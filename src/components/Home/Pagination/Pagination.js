@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom'
 
-import './Pagination.css'
+import './Pagination.scss'
 
 function Pagination(props) {
   const { searchParams, totalCount } = props

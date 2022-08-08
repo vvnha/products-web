@@ -12,7 +12,7 @@ import {
   updateProduct,
 } from 'services/products/product-services'
 
-import './AddEditContainer.css'
+import './AddEditContainer.scss'
 
 const AddEditContainer = ({ product }) => {
   const [isSaveLoading, setIsSaveLoading] = useState(false)

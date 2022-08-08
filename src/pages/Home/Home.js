@@ -6,7 +6,7 @@ import Loader from 'components/Loader/Loader'
 import Pagination from 'components/Home/Pagination/Pagination'
 
 import { getAllProduct } from 'services/products/product-services'
-import './Home.css'
+import './Home.scss'
 import { PRODUCT_NUMBER_COUNT } from '../../constants'
 
 function Home() {

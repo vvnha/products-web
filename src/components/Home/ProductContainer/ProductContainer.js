@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom'
 
-import './ProductContainer.css'
+import './ProductContainer.scss'
 
 const ProductContainer = ({ product }) => {
   const navigate = useNavigate()

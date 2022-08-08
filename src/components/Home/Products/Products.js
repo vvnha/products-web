@@ -1,6 +1,6 @@
 import uniqid from 'uniqid'
 import ProductContainer from '../ProductContainer/ProductContainer'
-import './Products.css'
+import './Products.scss'
 
 const Products = (props) => {
   const { products } = props
