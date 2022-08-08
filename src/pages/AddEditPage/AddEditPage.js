@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 
-import Loader from '../../components/Loader/Loader'
+import Loader from 'components/Loader/Loader'
 
-import { getProductByCode } from '../../services/products/product-services'
-import AddEditContainer from '../../components/AddEditPage/AddEditContainer'
-import useNotFound from '../../customHooks/useNotFound'
-import NotFoundContainer from '../../components/NotFound/NotFoundContainer'
+import { getProductByCode } from 'services/products/product-services'
+import AddEditContainer from 'components/AddEditPage/AddEditContainer'
+import useNotFound from 'customHooks/useNotFound'
+import NotFoundContainer from 'components/NotFound/NotFoundContainer'
 
 function AddEditPage() {
   const { productCode } = useParams()

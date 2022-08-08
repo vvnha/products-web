@@ -10,7 +10,7 @@ import {
   createProduct,
   getProductByCode,
   updateProduct,
-} from '../../services/products/product-services'
+} from 'services/products/product-services'
 
 import './AddEditContainer.css'
 

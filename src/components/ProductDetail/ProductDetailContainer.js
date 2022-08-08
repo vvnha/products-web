@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import { deleteProduct } from '../../services/products/product-services'
+import { deleteProduct } from 'services/products/product-services'
 
 import './ProductDetailContainer.css'
 

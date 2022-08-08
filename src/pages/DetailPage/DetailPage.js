@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import Loader from '../../components/Loader/Loader'
+import Loader from 'components/Loader/Loader'
 
-import { getProductByCode } from '../../services/products/product-services'
-import ProductDetailContainer from '../../components/ProductDetail/ProductDetailContainer'
-import NotFoundContainer from '../../components/NotFound/NotFoundContainer'
-import useNotFound from '../../customHooks/useNotFound'
+import { getProductByCode } from 'services/products/product-services'
+import ProductDetailContainer from 'components/ProductDetail/ProductDetailContainer'
+import NotFoundContainer from 'components/NotFound/NotFoundContainer'
+import useNotFound from 'customHooks/useNotFound'
 
 function DetailPage() {
   const { productCode } = useParams()
